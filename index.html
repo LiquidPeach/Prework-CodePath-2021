@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+
+    <p style="text-align: center;">
+      Welcome to the game! Repeat the pattern. You have 3 lives. Make a mistake
+      and you lose one. Have fun!
+    </p>
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+    <div id="timer">
+      TIME
+      <div id="counter">10</div>
+    </div>
+
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound2.mp3?v=1616313544891"
+      id="Sound1"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound1.mp3?v=1616313538867"
+      id="Sound2"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound1.mp3?v=1616313538867"
+      id="Sound3"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound3.mp3?v=1616313549686"
+      id="Sound4"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound4.mp3?v=1616313554027"
+      id="Sound5"
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/4e37fc73-b81e-424f-9911-3233024cd683%2FSimonSound3.mp3?v=1616313549686"
+      id="Sound6"
+    ></audio>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="playSound(1)"
+      ></button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="playSound(2)"
+      ></button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="playSound(3)"
+      ></button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="playSound(4)"
+      ></button>
+      <button
+        id="button5"
+        onclick="guess(5)"
+        onmousedown="playSound(5)"
+      ></button>
+      <button
+        id="button6"
+        onclick="guess(6)"
+        onmousedown="playSound(6)"
+      ></button>
+    </div>
+  </body>
+</html>
